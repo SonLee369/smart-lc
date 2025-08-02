@@ -1,0 +1,14 @@
+{
+  "name": "letter-of-credit-platform-tests",
+  "version": "1.0.0",
+  "description": "Tests for the SmartLC contracts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@stacks/clarinet-sdk": "^1.2.0",
+    "@stacks/transactions": "^6.8.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  }
+}

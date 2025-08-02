@@ -1,0 +1,26 @@
+[project]
+name = "letter-of-credit-platform"
+description = "Bitcoin-secured Letter of Credit platform on Stacks"
+authors = ["Your Name <your.email@example.com>"]
+telemetry = false
+cache_dir = "./.cache"
+requirements = []
+
+[contracts.letter-of-credit]
+path = "contracts/letter-of-credit.clar"
+depends_on = []
+
+[contracts.document-verification]
+path = "contracts/document-verification.clar"
+depends_on = ["letter-of-credit"]
+
+[repl]
+# This section is optional but good for analysis
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
